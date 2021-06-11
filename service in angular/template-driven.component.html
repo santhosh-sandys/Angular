@@ -1,0 +1,33 @@
+
+<div class="container">
+    <h2>Login Form</h2>
+
+
+<form #bio="ngForm" (ngSubmit)="onSubmit(bio)">
+
+    
+  <div class="form-group">
+    <label for="name">UserName</label><br>
+    <input type="text" #name="ngModel" class="form-control"  [(ngModel)]="model.name" minLength="5" required name="name" minlength="5">
+    <div *ngIf="name.invalid && name.touched" class="error">
+        <span *ngIf="name.errors?.required"> Name Field Is Required</span>
+        <span *ngIf="name.errors?.minlength">should be six char</span>
+    </div>   
+    
+</div>
+
+
+  
+  
+  <div class="form-group">
+    <label >Password</label><br>
+    <input type="password"  class="form-control" #address="ngModel" required [(ngModel)]="model.password" name="password" >
+    <!-- <div *ngIf="password. && password.touched" class="error">Please Enter Password</div>  -->
+           
+  </div>
+
+
+  <button  class="btn btn-primary" > SUBMIT</button>
+
+</form>
+</div> 
