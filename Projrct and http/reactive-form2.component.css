@@ -1,0 +1,31 @@
+
+h3{
+    padding:30px;
+    text-align: center;
+    background-color: rgb(141, 184, 228);
+
+}
+#regbutton{
+  background-color: rgb(3, 105, 49);
+  
+}
+
+.form-group{
+    background-color: rgb(255, 255, 255);
+      width:500px;
+}
+ input.ng-valid {
+    border-left: 10px solid #42A948;  
+  }
+  
+  input.ng-invalid:not(form)  {
+    border-left: 10px solid #a94442; 
+  }
+.error{
+    color:rgb(255, 0, 0);
+}
+.container{
+  
+  max-width:fit-content;
+}
+

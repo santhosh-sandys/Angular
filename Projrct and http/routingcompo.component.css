@@ -1,0 +1,24 @@
+
+
+#reg{
+    margin:50px;
+    padding:10px;
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+#log{
+    margin:20px; 
+    padding:10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#table{
+    float:right;
+    margin:50px;
+    padding:10px;
+}
+#navi{
+    border:black;
+    border-radius: 10px;
+}
+

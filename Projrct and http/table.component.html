@@ -1,0 +1,117 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+      <table class="table">
+          <thead class="table">
+              <tr>
+                  <th>User Name</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Nationality</th>
+                  <th>E-mail</th>
+                  <th>Password</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                  <td>{{data1.firstName}}</td>
+                  <td>{{data1.lastName}}</td>
+                  <td>{{data1.age}}</td>
+                  <td>{{data1.nationality}}</td>
+                  <td>{{data1.email}}</td>
+                  <td>{{data1.password}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+      <!-- <button type="button" class="btn btn-primary" id="gb" (click)="goBack()">Go back</button> -->
+      <button type="button" class="btn btn-success" id="ei" (click)="editInfo()">Edit Info</button>
+      <!-- <button type="button" class="btn btn-info" id="ei" (click)="getdata() ">httpButton</button> -->
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+      <div *ngIf="details">
+          <h2>{{details.fname | uppercase}} Details</h2>
+          <div class="shadow p-3 mb-5 bg-white rounded">
+              <form class="edit">
+                  <div class="form-group">
+                      <label >UserName</label>
+                      <input type="text" name="firstName" class="form-control" [(ngModel)]="details.firstName"
+                          placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                      <label >Name</label>
+                      <input type="text" name="lastName" class="form-control" [(ngModel)]="details.lastName"
+                          placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                      <label >Age</label>
+                      <input type="number" name="age" class="form-control" [(ngModel)]="details.age"
+                          placeholder="Age">
+                  </div>
+                  <div class="form-group">
+                      <label >Nationality</label>
+                      <input type="text" name="nationality" class="form-control" [(ngModel)]="details.nationality">
+                  </div>
+                  <div class="form-group">
+                      <label >Qualification</label>
+                      <input type="text" name="qualification" class="form-control" [(ngModel)]="details.qualification"
+                          placeholder="qualification">
+                  </div>
+                  <div class="form-group">
+                      <label >Email</label>
+                      <input type="email" name="email" class="form-control" [(ngModel)]="details.email"
+                          placeholder="email">
+                  </div>
+                  <div class="form-group">
+                      <label >Password</label>
+                      <input type="password" name="password" class="form-control" [(ngModel)]="details.password"
+                          placeholder="password">
+                  </div>
+                  <div>
+                      <button type="button" class="btn btn-success" (click)="updInfo()">Update Info</button>
+
+                  </div>
+              </form>
+
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+
+<table >
+<thead class="table">
+    <tr >
+        <th>User Name</th>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Address</th>
+     
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor= "let user of receive">
+        <td>{{user.id}}</td>
+        <td>{{user.userId}}</td>
+        <td>{{user.title}}</td>
+        <td>{{user.body}}</td>
+       
+        
+    </tr>
+</tbody>
+</table>
+
+

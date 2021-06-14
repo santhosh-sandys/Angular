@@ -1,0 +1,33 @@
+
+h3{
+    margin:50px;
+    
+}
+body{
+    background-color: rgb(214, 103, 103);
+}
+.form-group{
+    background-color: rgb(255, 255, 255);
+      width:500px;
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 20px solid #42A948;  
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 20px solid #a94442; 
+  }
+
+
+
+.error{
+    color:rgb(255, 0, 0);
+}
+
+
+
+
+
+/* .alert input , .alert input[required]{
+    border-color: rgb(68, 0, 255);
+} */
